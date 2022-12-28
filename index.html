@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet"href="https://js.arcgis.com/4.25/esri/themes/light/main.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>APP de tabla</title>
+</head>
+<body onload="cargarapp()">
+    <Header>
+        <div class="logo"><i class='bx bx-map-alt'></i></div>
+        Aplicacion API de Javascript de ARCGIS. 
+    </Header> 
+    <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <div class="lorem-data">
+    <img src="Esri-Logo.wine.png" alt="LOGO1">
+    <h3>Visualizacion 3D map con la api de JS ESRI.</h3>
+    <div class="sociales">
+        <a href="#"><i class='bx bx-map'></i></a>
+        <a href="#"><i class='bx bxs-map-alt'></i></a>
+        <a href="#"><i class='bx bxl-javascript'></i></a>
+        <a href="#"><i class='bx bxs-data'></i></a>
+    </div>
+    </div> 
+    </div>
+    <div id="viewDiv"></div> 
+    <div class="title-map" id="title-map">
+    <img src="Titile-map.webp" alt="MAP-TITLE">
+    <div class="title-map-letters">
+        <h2>Mapa de parametros geomorfologicos y fisiograficos cuenca delimitada</h2>
+    </div>
+    <div class="container-search" id="container-search"></div>
+    </div>
+    <div class="contenedor-imagenes" id="contenedor-imagenes">
+        <div class="curvahip"> <br>
+            <h2>Curva hisometrica</h2>
+            <img src="Curva hisometrica.png" alt="Curva1">
+        </div>
+        <div class="distribucion"> <br>
+            <h2>Grafico de distribucion de frecuencias de la cuenca</h2>
+            <img src="grafico distriucion.png" alt="Distribucion1">
+        </div>
+    </div>
+
+
+      <script src="https://js.arcgis.com/4.25/"></script>
+      <script src="codigo.js"></script>
+    
+</body>
+</html>
